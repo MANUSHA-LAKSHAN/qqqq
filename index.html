@@ -13,9 +13,12 @@
     <div class="container">
 
         <!-- === PLAYER SECTION === -->
-        <div class="player-section">
-            <div class="video-wrapper shaka-video-container" data-shaka-player-container="" shaka-controls="true">
-                <video data-shaka-player="" id="video" autoplay="" playsinline="" class="shaka-video" src="blob:https://sltvapp.techlasiya.com/303d1d0d-85f2-4f6d-a3ae-7b2ea1c268e2"></video>
+       <div class="player-section">
+            <div class="video-wrapper" data-shaka-player-container>
+                <video data-shaka-player id="video" autoplay playsinline></video>
+
+                <!-- === LOADING SPINNER === -->
+                <div id="loadingSpinner" class="loading-spinner"></div>
 
                 <!-- === WATERMARK (bottom-left, clickable) === -->
                 <div class="watermark">

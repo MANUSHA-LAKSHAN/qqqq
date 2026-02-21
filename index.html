@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<!-- saved from url=(0036)https://sltvapp.techlasiya.com/live/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SLTV – Live Channel Player</title>
+    <script src="./SLTV – Live Channel Player_files/shaka-player.ui.js.download"></script>
+    <link rel="stylesheet" href="./SLTV – Live Channel Player_files/controls.css">
+    <link rel="stylesheet" href="./SLTV – Live Channel Player_files/style.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <!-- === PLAYER SECTION === -->
+        <div class="player-section">
+            <div class="video-wrapper shaka-video-container" data-shaka-player-container="" shaka-controls="true">
+                <video data-shaka-player="" id="video" autoplay="" playsinline="" class="shaka-video" src="blob:https://sltvapp.techlasiya.com/303d1d0d-85f2-4f6d-a3ae-7b2ea1c268e2"></video>
+
+                <!-- === WATERMARK (bottom-left, clickable) === -->
+                <div class="watermark">
+                    <a>
+                        <img src="./SLTV – Live Channel Player_files/logo.png" alt="Watermark Logo">
+                    </a>
+                </div>
+            <div class="shaka-controls-container"><div class="shaka-scrim-container"></div><div class="shaka-hidden-fast-forward-container"><div class="shaka-fast-foward-container"><span>0s</span><span class="shaka-forward-rewind-container-icon">fast_forward</span></div></div><div class="shaka-hidden-rewind-container"><div class="shaka-rewind-container"><span>0s</span><span class="shaka-forward-rewind-container-icon">fast_rewind</span></div></div><div class="shaka-server-side-ad-container"></div><div class="shaka-bottom-controls shaka-no-propagation"><div class="shaka-ad-controls shaka-hidden"><div class="shaka-ad-position shaka-hidden"><span class="shaka-ad-position-span"></span></div><div class="shaka-ad-counter"><span class="shaka-ad-counter-span"></span></div></div><div class="shaka-controls-button-panel shaka-show-controls-on-mouse-over"><button type="button" class="shaka-small-play-button material-icons-round shaka-tooltip" aria-label="Pause">pause</button><button type="button" class="shaka-current-time" aria-label="Skip ahead to live">- 1:47</button><div class="shaka-spacer" aria-hidden="true"></div><button type="button" class="shaka-mute-button material-icons-round shaka-tooltip" aria-label="Mute">volume_up</button><div class="shaka-range-container shaka-volume-bar-container" style="background: linear-gradient(to right, rgb(255, 255, 255) 100%, rgba(255, 255, 255, 0.54) 100%, rgba(255, 255, 255, 0.54) 100%);"><input class="shaka-range-element shaka-volume-bar" type="range" step="any" min="0" max="100" aria-label="Volume"></div><button type="button" class="shaka-fullscreen-button material-icons-round shaka-tooltip" aria-label="Full screen">fullscreen</button><button type="button" class="shaka-overflow-menu-button shaka-no-propagation material-icons-round shaka-tooltip" aria-label="More settings">more_vert</button></div><div class="shaka-range-container shaka-seek-bar-container" style="background: rgba(255, 255, 255, 0.3);"><div class="shaka-ad-markers" style="background: transparent;"></div><input class="shaka-range-element shaka-seek-bar shaka-no-propagation shaka-show-controls-on-mouse-over" type="range" step="any" min="1771299654.0176876" max="1771299762.0176876" aria-label="Seek"><div id="shaka-player-ui-chapters-container"></div><div id="shaka-player-ui-thumbnail-container" style="visibility: hidden;"><img id="shaka-player-ui-thumbnail-image" draggable="false"><div id="shaka-player-ui-thumbnail-time"></div></div></div></div><div class="shaka-overflow-menu shaka-no-propagation shaka-show-controls-on-mouse-over shaka-hidden"><button type="button" class="shaka-overflow-button shaka-resolution-button shaka-tooltip-status" shaka-status="Auto" aria-label="Resolution"><i class="material-icons-round">settings</i><label class="shaka-overflow-button-label shaka-overflow-menu-only"><span>Resolution</span><span class="shaka-current-selection-span">Auto</span></label></button><button type="button" class="shaka-overflow-button shaka-playbackrate-button shaka-tooltip-status" aria-label="Playback speed" shaka-status="0x"><i class="material-icons-round">slow_motion_video</i><label class="shaka-overflow-button-label shaka-overflow-menu-only"><span>Playback speed</span><span class="shaka-current-selection-span">0x</span></label></button><button type="button" class="shaka-pip-button shaka-tooltip" aria-label="Enter Picture-in-Picture"><i class="material-icons-round">picture_in_picture_alt</i><label class="shaka-overflow-button-label shaka-overflow-menu-only"><span>Picture-in-Picture</span><span class="shaka-current-selection-span">Off</span></label></button></div><div class="shaka-no-propagation shaka-show-controls-on-mouse-over shaka-settings-menu shaka-hidden shaka-resolutions"><button type="button" class="shaka-back-to-overflow-button" aria-label="Resolution"><i class="material-icons-round">arrow_back</i><span>Resolution</span></button><button type="button" class="explicit-resolution"><span>1080p</span></button><button type="button" class="explicit-resolution"><span>720p</span></button><button type="button" class="explicit-resolution"><span>576p</span></button><button type="button" class="explicit-resolution"><span>432p</span></button><button type="button" class="explicit-resolution"><span>360p</span></button><button type="button" class="shaka-enable-abr-button" aria-selected="true"><span class="shaka-auto-span shaka-chosen-item">Auto</span><i class="material-icons-round shaka-chosen-item" aria-hidden="true">done</i></button></div><div class="shaka-no-propagation shaka-show-controls-on-mouse-over shaka-settings-menu shaka-hidden shaka-playback-rates"><button type="button" class="shaka-back-to-overflow-button" aria-label="Back"><i class="material-icons-round">arrow_back</i><span>Playback speed</span></button><button type="button"><span>0.5x</span></button><button type="button"><span>0.75x</span></button><button type="button"><span>1x</span></button><button type="button"><span>1.25x</span></button><button type="button"><span>1.5x</span></button><button type="button"><span>1.75x</span></button><button type="button"><span>2x</span></button></div></div><div class="shaka-client-side-ad-container shaka-hidden"></div><div class="shaka-spinner-container shaka-hidden"><div class="shaka-spinner"><svg class="shaka-spinner-svg" viewBox="0 0 30 30"><circle class="shaka-spinner-path" cx="15" cy="15" r="14.5" fill="none" stroke-width="1" stroke-miterlimit="10"></circle></svg></div></div><div class="shaka-text-container" style="text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: flex-end;"></div></div>
+
+            <!-- Search Bar -->
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Search channels..." autocomplete="off">
+            </div>
+        </div>
+
+        <!-- === CHANNEL GRID (populated by JS) === -->
+        <div class="channels-container" id="channelsContainer"><section class="cat-section"><div class="cat-title">Local</div><div class="app-grid">
+            <div class="channel-card" data-channel-id="13" data-channel-name="ART Television" data-channel-image="https://api3.viu.lk/api/client/v1/global/images/25672?accessKey=WkVjNWNscFhORDBLCg==">
+              <div class="icon-box"><img src="./SLTV – Live Channel Player_files/25672" loading="lazy" alt="ART Television"></div>
+              <span>ART Television</span>
+            </div>
+            <div class="channel-card" data-channel-id="1" data-channel-name="Channel One" data-channel-image="https://api3.viu.lk/api/client/v1/global/images/25660?accessKey=WkVjNWNscFhORDBLCg==">
+              <div class="icon-box"><img src="./SLTV – Live Channel Player_files/25660" loading="lazy" alt="Channel One"></div>
+              <span>Channel One</span>
+            </div>
+            <div class="channel-card" data-channel-id="16" data-channel-name="Haritha TV" data-channel-image="https://api3.viu.lk/api/client/v1/global/images/25675?accessKey=WkVjNWNscFhORDBLCg==">
+              <div class="icon-box"><img src="./SLTV – Live Channel Player_files/25675" loading="lazy" alt="Haritha TV"></div>
+              <span>Haritha TV</span>
+            </div>
+            <div class="channel-card" data-channel-id="11" data-channel-name="Hiru TV" data-channel-image="https://api3.viu.lk/api/client/v1/global/images/25670?accessKey=WkVjNWNscFhORDBLCg==">
+              <div class="icon-box"><img src="./SLTV – Live Channel Player_files/25670" loading="lazy" alt="Hiru TV"></div>
+              <span>Hiru TV</span>
+            </div>
+            <div class="channel-card" data-channel-id="4" data-channel-name="ITN" data-channel-image="https://api3.viu.lk/api/client/v1/global/images/25663?accessKey=WkVjNWNscFhORDBLCg==">
+              <div class="icon-box"><img src="./SLTV – Live Channel Player_files/25663" loading="lazy" alt="ITN"></div>
+              <span>ITN</span>
+            </div>
+            <div class="channel-card" data-channel-id="25" data-channel-name="Jaya TV" data-channel-image="https://api3.viu.lk/api/client/v1/global/images/25684?accessKey=WkVjNWNscFhORDBLCg==">
+              <div class="icon-box"><img src="./SLTV – Live Channel Player_files/25684" loading="lazy" alt="Jaya TV"></div>
+              <span>Jaya TV</span>
+            </div>
+            <div class="channel-card" data-channel-id="3" data-channel-name="Nethra TV" data-channel-image="https://api3.viu.lk/api/client/v1/global/images/25662?accessKey=WkVjNWNscFhORDBLCg==">
+              <div class="icon-box"><img src="./SLTV – Live Channel Player_files/25662" loading="lazy" alt="Nethra TV"></div>
+              <span>Nethra TV</span>
+            </div>
+            <div class="channel-card" data-channel-id="21" data-channel-name="Rangiri Sri Lanka" data-channel-image="https://api3.viu.lk/api/client/v1/global/images/25680?accessKey=WkVjNWNscFhORDBLCg==">
+              <div class="icon-box"><img src="./SLTV – Live Channel Player_files/25680" loading="lazy" alt="Rangiri Sri Lanka"></div>
+              <span>Rangiri Sri Lanka</span>
+            </div>
+            <div class="channel-card" data-channel-id="18" data-channel-name="Ridee TV" data-channel-image="https://api3.viu.lk/api/client/v1/global/images/25677?accessKey=WkVjNWNscFhORDBLCg==">
+              <div class="icon-box"><img src="./SLTV – Live Channel Player_files/25677" loading="lazy" alt="Ridee TV"></div>
+              <span>Ridee TV</span>
+            </div>
+            <div class="channel-card" data-channel-id="2" data-channel-name="Rupavahini" data-channel-image="https://api3.viu.lk/api/client/v1/global/images/25661?accessKey=WkVjNWNscFhORDBLCg==">
+              <div class="icon-box"><img src="./SLTV – Live Channel Player_files/25661" loading="lazy" alt="Rupavahini"></div>
+              <span>Rupavahini</span>
+            </div>
+            <div class="channel-card" data-channel-id="9" data-channel-name="Shakthi TV" data-channel-image="https://api3.viu.lk/api/client/v1/global/images/25668?accessKey=WkVjNWNscFhORDBLCg==">
+              <div class="icon-box"><img src="./SLTV – Live Channel Player_files/25668" loading="lazy" alt="Shakthi TV"></div>
+              <span>Shakthi TV</span>
+            </div>
+            <div class="channel-card" data-channel-id="8" data-channel-name="Sirasa TV" data-channel-image="https://api3.viu.lk/api/client/v1/global/images/25667?accessKey=WkVjNWNscFhORDBLCg==">
+              <div class="icon-box"><img src="./SLTV – Live Channel Player_files/25667" loading="lazy" alt="Sirasa TV"></div>
+              <span>Sirasa TV</span>
+            </div>
+            <div class="channel-card" data-channel-id="15" data-channel-name="Siyatha TV" data-channel-image="https://api3.viu.lk/api/client/v1/global/images/25674?accessKey=WkVjNWNscFhORDBLCg==">
+              <div class="icon-box"><img src="./SLTV – Live Channel Player_files/25674" loading="lazy" alt="Siyatha TV"></div>
+              <span>Siyatha TV</span>
+            </div>
+            <div class="channel-card" data-channel-id="7" data-channel-name="Swarnavahini" data-channel-image="https://api3.viu.lk/api/client/v1/global/images/25666?accessKey=WkVjNWNscFhORDBLCg==">
+              <div class="icon-box"><img src="./SLTV – Live Channel Player_files/25666" loading="lazy" alt="Swarnavahini"></div>
+              <span>Swarnavahini</span>
+            </div>
+            <div class="channel-card" data-channel-id="10" data-channel-name="TV 1" data-channel-image="https://api3.viu.lk/api/client/v1/global/images/25669?accessKey=WkVjNWNscFhORDBLCg==">
+              <div class="icon-box"><img src="./SLTV – Live Channel Player_files/25669" loading="lazy" alt="TV 1"></div>
+              <span>TV 1</span>
+            </div>
+            <div class="channel-card" data-channel-id="6" data-channel-name="TV Derana" data-channel-image="https://api3.viu.lk/api/client/v1/global/images/25665?accessKey=WkVjNWNscFhORDBLCg==">
+              <div class="icon-box"><img src="./SLTV – Live Channel Player_files/25665" loading="lazy" alt="TV Derana"></div>
+              <span>TV Derana</span>
+            </div>
+            <div class="channel-card" data-channel-id="17" data-channel-name="TV Didula" data-channel-image="https://api3.viu.lk/api/client/v1/global/images/25676?accessKey=WkVjNWNscFhORDBLCg==">
+              <div class="icon-box"><img src="./SLTV – Live Channel Player_files/25676" loading="lazy" alt="TV Didula"></div>
+              <span>TV Didula</span>
+            </div>
+            <div class="channel-card" data-channel-id="12" data-channel-name="TV Supreme" data-channel-image="https://api3.viu.lk/api/client/v1/global/images/25679?accessKey=WkVjNWNscFhORDBLCg==">
+              <div class="icon-box"><img src="./SLTV – Live Channel Player_files/25679" loading="lazy" alt="TV Supreme"></div>
+              <span>TV Supreme</span>
+            </div>
+            <div class="channel-card" data-channel-id="5" data-channel-name="Vasantham TV" data-channel-image="https://api3.viu.lk/api/client/v1/global/images/25664?accessKey=WkVjNWNscFhORDBLCg==">
+              <div class="icon-box"><img src="./SLTV – Live Channel Player_files/25664" loading="lazy" alt="Vasantham TV"></div>
+              <span>Vasantham TV</span>
+            </div></div></section><section class="cat-section"><div class="cat-title">News</div><div class="app-grid">
+            <div class="channel-card" data-channel-id="14" data-channel-name="Ada Derana 24" data-channel-image="https://api3.viu.lk/api/client/v1/global/images/25673?accessKey=WkVjNWNscFhORDBLCg==">
+              <div class="icon-box"><img src="./SLTV – Live Channel Player_files/25673" loading="lazy" alt="Ada Derana 24"></div>
+              <span>Ada Derana 24</span>
+            </div>
+            <div class="channel-card" data-channel-id="30" data-channel-name="Al Jazeera" data-channel-image="https://api3.viu.lk/api/client/v1/global/images/25689?accessKey=WkVjNWNscFhORDBLCg==">
+              <div class="icon-box"><img src="./SLTV – Live Channel Player_files/25689" loading="lazy" alt="Al Jazeera"></div>
+              <span>Al Jazeera</span>
+            </div>
+            <div class="channel-card" data-channel-id="32" data-channel-name="BBC World" data-channel-image="https://api3.viu.lk/api/client/v1/global/images/25691?accessKey=WkVjNWNscFhORDBLCg==">
+              <div class="icon-box"><img src="./SLTV – Live Channel Player_files/25691" loading="lazy" alt="BBC World"></div>
+              <span>BBC World</span>
+            </div>
+            <div class="channel-card" data-channel-id="38" data-channel-name="Bloomberg" data-channel-image="https://api3.viu.lk/api/client/v1/global/images/25698?accessKey=WkVjNWNscFhORDBLCg==">
+              <div class="icon-box"><img src="./SLTV – Live Channel Player_files/25698" loading="lazy" alt="Bloomberg"></div>
+              <span>Bloomberg</span>
+            </div>
+            <div class="channel-card" data-channel-id="33" data-channel-name="CGTN" data-channel-image="https://api3.viu.lk/api/client/v1/global/images/25692?accessKey=WkVjNWNscFhORDBLCg==">
+              <div class="icon-box"><img src="./SLTV – Live Channel Player_files/25692" loading="lazy" alt="CGTN"></div>
+              <span>CGTN</span>
+            </div>
+            <div class="channel-card" data-channel-id="39" data-channel-name="CNBC" data-channel-image="https://api3.viu.lk/api/client/v1/global/images/25699?accessKey=WkVjNWNscFhORDBLCg==">
+              <div class="icon-box"><img src="./SLTV – Live Channel Player_files/25699" loading="lazy" alt="CNBC"></div>
+              <span>CNBC</span>
+            </div>
+            <div class="channel-card" data-channel-id="34" data-channel-name="CNN" data-channel-image="https://api3.viu.lk/api/client/v1/global/images/25693?accessKey=WkVjNWNscFhORDBLCg==">
+              <div class="icon-box"><img src="./SLTV – Live Channel Player_files/25693" loading="lazy" alt="CNN"></div>
+              <span>CNN</span>
+            </div>
+            <div class="channel-card" data-channel-id="37" data-channel-name="Euro News" data-channel-image="https://api3.viu.lk/api/client/v1/global/images/25696?accessKey=WkVjNWNscFhORDBLCg==">
+              <div class="icon-box"><img src="./SLTV – Live Channel Player_files/25696" loading="lazy" alt="Euro News"></div>
+              <span>Euro News</span>
+            </div>
+            <div class="channel-card" data-channel-id="36" data-channel-name="France 24" data-channel-image="https://api3.viu.lk/api/client/v1/global/images/25695?accessKey=WkVjNWNscFhORDBLCg==">
+              <div class="icon-box"><img src="./SLTV – Live Channel Player_files/25695" loading="lazy" alt="France 24"></div>
+              <span>France 24</span>
+            </div>
+            <div class="channel-card" data-channel-id="35" data-channel-name="NDTV" data-channel-image="https://api3.viu.lk/api/client/v1/global/images/25694?accessKey=WkVjNWNscFhORDBLCg==">
+              <div class="icon-box"><img src="./SLTV – Live Channel Player_files/25694" loading="lazy" alt="NDTV"></div>
+              <span>NDTV</span>
+            </div></div></section><section class="cat-section"><div class="cat-title">Sports</div><div class="app-grid">
+            <div class="channel-card" data-channel-id="67" data-channel-name="Eurosport" data-channel-image="https://api3.viu.lk/api/client/v1/global/images/25727?accessKey=WkVjNWNscFhORDBLCg==">
+              <div class="icon-box"><img src="./SLTV – Live Channel Player_files/25727" loading="lazy" alt="Eurosport"></div>
+              <span>Eurosport</span>
+            </div>
+            <div class="channel-card" data-channel-id="64" data-channel-name="Sony Sports 1" data-channel-image="https://api3.viu.lk/api/client/v1/global/images/25724?accessKey=WkVjNWNscFhORDBLCg==">
+              <div class="icon-box"><img src="./SLTV – Live Channel Player_files/25724" loading="lazy" alt="Sony Sports 1"></div>
+              <span>Sony Sports 1</span>
+            </div>
+            <div class="channel-card" data-channel-id="66" data-channel-name="Sony Sports 2" data-channel-image="https://api3.viu.lk/api/client/v1/global/images/25726?accessKey=WkVjNWNscFhORDBLCg==">
+              <div class="icon-box"><img src="./SLTV – Live Channel Player_files/25726" loading="lazy" alt="Sony Sports 2"></div>
+              <span>Sony Sports 2</span>
+            </div>
+            <div class="channel-card" data-channel-id="123" data-channel-name="Sony Sports 2 HD" data-channel-image="https://api3.viu.lk/api/client/v1/global/images/25781?accessKey=WkVjNWNscFhORDBLCg==">
+              <div class="icon-box"><img src="./SLTV – Live Channel Player_files/25781" loading="lazy" alt="Sony Sports 2 HD"></div>
+              <span>Sony Sports 2 HD</span>
+            </div>
+            <div class="channel-card" data-channel-id="124" data-channel-name="Sony Sports 5 HD" data-channel-image="https://api3.viu.lk/api/client/v1/global/images/25782?accessKey=WkVjNWNscFhORDBLCg==">
+              <div class="icon-box"><img src="./SLTV – Live Channel Player_files/25782" loading="lazy" alt="Sony Sports 5 HD"></div>
+              <span>Sony Sports 5 HD</span>
+            </div>
+            <div class="channel-card" data-channel-id="68" data-channel-name="Star Sports 1" data-channel-image="https://api3.viu.lk/api/client/v1/global/images/25728?accessKey=WkVjNWNscFhORDBLCg==">
+              <div class="icon-box"><img src="./SLTV – Live Channel Player_files/25728" loading="lazy" alt="Star Sports 1"></div>
+              <span>Star Sports 1</span>
+            </div>
+            <div class="channel-card" data-channel-id="69" data-channel-name="Star Sports 2" data-channel-image="https://api3.viu.lk/api/client/v1/global/images/25729?accessKey=WkVjNWNscFhORDBLCg==">
+              <div class="icon-box"><img src="./SLTV – Live Channel Player_files/25729" loading="lazy" alt="Star Sports 2"></div>
+              <span>Star Sports 2</span>
+            </div>
+            <div class="channel-card" data-channel-id="65" data-channel-name="Ten Cricket" data-channel-image="https://api3.viu.lk/api/client/v1/global/images/25725?accessKey=WkVjNWNscFhORDBLCg==">
+              <div class="icon-box"><img src="./SLTV – Live Channel Player_files/25725" loading="lazy" alt="Ten Cricket"></div>
+              <span>Ten Cricket</span>
+            </div>
+            <div class="channel-card" data-channel-id="62" data-channel-name="The Papare TV 1" data-channel-image="https://api3.viu.lk/api/client/v1/global/images/130717?accessKey=WkVjNWNscFhORDBLCg==">
+              <div class="icon-box"><img src="./SLTV – Live Channel Player_files/130717" loading="lazy" alt="The Papare TV 1"></div>
+              <span>The Papare TV 1</span>
+            </div>
+            <div class="channel-card" data-channel-id="63" data-channel-name="The Papare TV 2" data-channel-image="https://api3.viu.lk/api/client/v1/global/images/130719?accessKey=WkVjNWNscFhORDBLCg==">
+              <div class="icon-box"><img src="./SLTV – Live Channel Player_files/130719" loading="lazy" alt="The Papare TV 2"></div>
+              <span>The Papare TV 2</span>
+            </div>
+            <div class="channel-card active" data-channel-id="120" data-channel-name="Star Sports HD 1" data-channel-image="https://api3.viu.lk/api/client/v1/global/images/25778?accessKey=WkVjNWNscFhORDBLCg==">
+              <div class="icon-box"><img src="./SLTV – Live Channel Player_files/25778" loading="lazy" alt="Star Sports HD 1"></div>
+              <span>Star Sports HD 1</span>
+            </div>
+            <div class="channel-card" data-channel-id="125" data-channel-name="Premier Sports HD" data-channel-image="https://api3.viu.lk/api/client/v1/global/images/25783?accessKey=WkVjNWNscFhORDBLCg==">
+              <div class="icon-box"><img src="./SLTV – Live Channel Player_files/25783" loading="lazy" alt="Premier Sports HD"></div>
+              <span>Premier Sports HD</span>
+            </div>
+            <div class="channel-card" data-channel-id="121" data-channel-name="Star Sports Select 1 HD" data-channel-image="https://api3.viu.lk/api/client/v1/global/images/25779?accessKey=WkVjNWNscFhORDBLCg==">
+              <div class="icon-box"><img src="./SLTV – Live Channel Player_files/25779" loading="lazy" alt="Star Sports Select 1 HD"></div>
+              <span>Star Sports Select 1 HD</span>
+            </div>
+            <div class="channel-card" data-channel-id="122" data-channel-name="Star Sports Select 2 HD" data-channel-image="https://api3.viu.lk/api/client/v1/global/images/25780?accessKey=WkVjNWNscFhORDBLCg==">
+              <div class="icon-box"><img src="./SLTV – Live Channel Player_files/25780" loading="lazy" alt="Star Sports Select 2 HD"></div>
+              <span>Star Sports Select 2 HD</span>
+            </div>
+            <div class="channel-card" data-channel-id="126" data-channel-name="The Papare TV 1 HD" data-channel-image="https://api3.viu.lk/api/client/v1/global/images/25784?accessKey=WkVjNWNscFhORDBLCg==">
+              <div class="icon-box"><img src="./SLTV – Live Channel Player_files/25784" loading="lazy" alt="The Papare TV 1 HD"></div>
+              <span>The Papare TV 1 HD</span>
+            </div>
+            <div class="channel-card" data-channel-id="127" data-channel-name="The Papare TV 2 HD" data-channel-image="https://api3.viu.lk/api/client/v1/global/images/25785?accessKey=WkVjNWNscFhORDBLCg==">
+              <div class="icon-box"><img src="./SLTV – Live Channel Player_files/25785" loading="lazy" alt="The Papare TV 2 HD"></div>
+              <span>The Papare TV 2 HD</span>
+            </div></div></section><section class="cat-section"><div class="cat-title">Entertainment</div><div class="app-grid">
+            <div class="channel-card" data-channel-id="72" data-channel-name="&amp;flix" data-channel-image="https://api3.viu.lk/api/client/v1/global/images/25732?accessKey=WkVjNWNscFhORDBLCg==">
+              <div class="icon-box"><img src="./SLTV – Live Channel Player_files/25732" loading="lazy" alt="&amp;flix"></div>
+              <span>&amp;flix</span>
+            </div>
+            <div class="channel-card" data-channel-id="78" data-channel-name="AXN" data-channel-image="https://api3.viu.lk/api/client/v1/global/images/25737?accessKey=WkVjNWNscFhORDBLCg==">
+              <div class="icon-box"><img src="./SLTV – Live Channel Player_files/25737" loading="lazy" alt="AXN"></div>
+              <span>AXN</span>
+            </div>
+            <div class="channel-card" data-channel-id="90" data-channel-name="B4U Movies" data-channel-image="https://api3.viu.lk/api/client/v1/global/images/25749?accessKey=WkVjNWNscFhORDBLCg==">
+              <div class="icon-box"><img src="./SLTV – Live Channel Player_files/25749" loading="lazy" alt="B4U Movies"></div>
+              <span>B4U Movies</span>
+            </div>
+            <div class="channel-card" data-channel-id="42" data-channel-name="Channel C" data-channel-image="https://api3.viu.lk/api/client/v1/global/images/25702?accessKey=WkVjNWNscFhORDBLCg==">
+              <div class="icon-box"><img src="./SLTV – Live Channel Player_files/25702" loading="lazy" alt="Channel C"></div>
+              <span>Channel C</span>
+            </div>
+            <div class="channel-card" data-channel-id="88" data-channel-name="Colors" data-channel-image="https://api3.viu.lk/api/client/v1/global/images/25747?accessKey=WkVjNWNscFhORDBLCg==">
+              <div class="icon-box"><img src="./SLTV – Live Channel Player_files/25747" loading="lazy" alt="Colors"></div>
+              <span>Colors</span>
+            </div>
+            <div class="channel-card" data-channel-id="79" data-channel-name="Colors Cineplex" data-channel-image="https://api3.viu.lk/api/client/v1/global/images/71893?accessKey=WkVjNWNscFhORDBLCg==">
+              <div class="icon-box"><img src="./SLTV – Live Channel Player_files/71893" loading="lazy" alt="Colors Cineplex"></div>
+              <span>Colors Cineplex</span>
+            </div>
+            <div class="channel-card" data-channel-id="93" data-channel-name="Colors Tamil" data-channel-image="https://api3.viu.lk/api/client/v1/global/images/25752?accessKey=WkVjNWNscFhORDBLCg==">
+              <div class="icon-box"><img src="./SLTV – Live Channel Player_files/25752" loading="lazy" alt="Colors Tamil"></div>
+              <span>Colors Tamil</span>
+            </div>
+            <div class="channel-card" data-channel-id="81" data-channel-name="Disney International" data-channel-image="https://api3.viu.lk/api/client/v1/global/images/174286?accessKey=WkVjNWNscFhORDBLCg==">
+              <div class="icon-box"><img src="./SLTV – Live Channel Player_files/174286" loading="lazy" alt="Disney International"></div>
+              <span>Disney International</span>
+            </div>
+            <div class="channel-card" data-channel-id="80" data-channel-name="Fashion TV" data-channel-image="https://api3.viu.lk/api/client/v1/global/images/25739?accessKey=WkVjNWNscFhORDBLCg==">
+              <div class="icon-box"><img src="./SLTV – Live Channel Player_files/25739" loading="lazy" alt="Fashion TV"></div>
+              <span>Fashion TV</span>
+            </div>
+            <div class="channel-card" data-channel-id="108" data-channel-name="Food Network" data-channel-image="https://api3.viu.lk/api/client/v1/global/images/25714?accessKey=WkVjNWNscFhORDBLCg==">
+              <div class="icon-box"><img src="./SLTV – Live Channel Player_files/25714" loading="lazy" alt="Food Network"></div>
+              <span>Food Network</span>
+            </div>
+            <div class="channel-card" data-channel-id="71" data-channel-name="HBO Family" data-channel-image="https://api3.viu.lk/api/client/v1/global/images/25731?accessKey=WkVjNWNscFhORDBLCg==">
+              <div class="icon-box"><img src="./SLTV – Live Channel Player_files/25731" loading="lazy" alt="HBO Family"></div>
+              <span>HBO Family</span>
+            </div>
+            <div class="channel-card" data-channel-id="70" data-channel-name="HBO Signature" data-channel-image="https://api3.viu.lk/api/client/v1/global/images/25730?accessKey=WkVjNWNscFhORDBLCg==">
+              <div class="icon-box"><img src="./SLTV – Live Channel Player_files/25730" loading="lazy" alt="HBO Signature"></div>
+              <span>HBO Signature</span>
+            </div>
+            <div class="channel-card" data-channel-id="107" data-channel-name="HGTV" data-channel-image="https://api3.viu.lk/api/client/v1/global/images/25722?accessKey=WkVjNWNscFhORDBLCg==">
+              <div class="icon-box"><img src="./SLTV – Live Channel Player_files/25722" loading="lazy" alt="HGTV"></div>
+              <span>HGTV</span>
+            </div>
+            <div class="channel-card" data-channel-id="22" data-channel-name="Hi TV" data-channel-image="https://api3.viu.lk/api/client/v1/global/images/25681?accessKey=WkVjNWNscFhORDBLCg==">
+              <div class="icon-box"><img src="./SLTV – Live Channel Player_files/25681" loading="lazy" alt="Hi TV"></div>
+              <span>Hi TV</span>
+            </div>
+            <div class="channel-card" data-channel-id="75" data-channel-name="HITS" data-channel-image="https://api3.viu.lk/api/client/v1/global/images/25734?accessKey=WkVjNWNscFhORDBLCg==">
+              <div class="icon-box"><img src="./SLTV – Live Channel Player_files/25734" loading="lazy" alt="HITS"></div>
+              <span>HITS</span>
+            </div>
+            <div class="channel-card" data-channel-id="73" data-channel-name="HITS MOVIES" data-channel-image="https://api3.viu.lk/api/client/v1/global/images/25733?accessKey=WkVjNWNscFhORDBLCg==">
+              <div class="icon-box"><img src="./SLTV – Live Channel Player_files/25733" loading="lazy" alt="HITS MOVIES"></div>
+              <span>HITS MOVIES</span>
+            </div>
+            <div class="channel-card" data-channel-id="43" data-channel-name="Jaya Max" data-channel-image="https://api3.viu.lk/api/client/v1/global/images/185457?accessKey=WkVjNWNscFhORDBLCg==">
+              <div class="icon-box"><img src="./SLTV – Live Channel Player_files/185457" loading="lazy" alt="Jaya Max"></div>
+              <span>Jaya Max</span>
+            </div>
+            <div class="channel-card" data-channel-id="95" data-channel-name="Jaya Movies" data-channel-image="https://api3.viu.lk/api/client/v1/global/images/185459?accessKey=WkVjNWNscFhORDBLCg==">
+              <div class="icon-box"><img src="./SLTV – Live Channel Player_files/185459" loading="lazy" alt="Jaya Movies"></div>
+              <span>Jaya Movies</span>
+            </div>
+            <div class="channel-card" data-channel-id="100" data-channel-name="Jaya Plus" data-channel-image="https://api3.viu.lk/api/client/v1/global/images/185452?accessKey=WkVjNWNscFhORDBLCg==">
+              <div class="icon-box"><img src="./SLTV – Live Channel Player_files/185452" loading="lazy" alt="Jaya Plus"></div>
+              <span>Jaya Plus</span>
+            </div>
+            <div class="channel-card" data-channel-id="97" data-channel-name="Kalaignar TV" data-channel-image="https://api3.viu.lk/api/client/v1/global/images/25756?accessKey=WkVjNWNscFhORDBLCg==">
+              <div class="icon-box"><img src="./SLTV – Live Channel Player_files/25756" loading="lazy" alt="Kalaignar TV"></div>
+              <span>Kalaignar TV</span>
+            </div>
+            <div class="channel-card" data-channel-id="86" data-channel-name="SET Max" data-channel-image="https://api3.viu.lk/api/client/v1/global/images/25745?accessKey=WkVjNWNscFhORDBLCg==">
+              <div class="icon-box"><img src="./SLTV – Live Channel Player_files/25745" loading="lazy" alt="SET Max"></div>
+              <span>SET Max</span>
+            </div>
+            <div class="channel-card" data-channel-id="99" data-channel-name="Sirippoli TV" data-channel-image="https://api3.viu.lk/api/client/v1/global/images/25795?accessKey=WkVjNWNscFhORDBLCg==">
+              <div class="icon-box"><img src="./SLTV – Live Channel Player_files/25795" loading="lazy" alt="Sirippoli TV"></div>
+              <span>Sirippoli TV</span>
+            </div>
+            <div class="channel-card" data-channel-id="74" data-channel-name="Sony PIX" data-channel-image="https://api3.viu.lk/api/client/v1/global/images/25708?accessKey=WkVjNWNscFhORDBLCg==">
+              <div class="icon-box"><img src="./SLTV – Live Channel Player_files/25708" loading="lazy" alt="Sony PIX"></div>
+              <span>Sony PIX</span>
+            </div>
+            <div class="channel-card" data-channel-id="85" data-channel-name="Sony SET" data-channel-image="https://api3.viu.lk/api/client/v1/global/images/25744?accessKey=WkVjNWNscFhORDBLCg==">
+              <div class="icon-box"><img src="./SLTV – Live Channel Player_files/25744" loading="lazy" alt="Sony SET"></div>
+              <span>Sony SET</span>
+            </div>
+            <div class="channel-card" data-channel-id="84" data-channel-name="Star Bharath" data-channel-image="https://api3.viu.lk/api/client/v1/global/images/25743?accessKey=WkVjNWNscFhORDBLCg==">
+              <div class="icon-box"><img src="./SLTV – Live Channel Player_files/25743" loading="lazy" alt="Star Bharath"></div>
+              <span>Star Bharath</span>
+            </div>
+            <div class="channel-card" data-channel-id="87" data-channel-name="Star Gold" data-channel-image="https://api3.viu.lk/api/client/v1/global/images/25746?accessKey=WkVjNWNscFhORDBLCg==">
+              <div class="icon-box"><img src="./SLTV – Live Channel Player_files/25746" loading="lazy" alt="Star Gold"></div>
+              <span>Star Gold</span>
+            </div>
+            <div class="channel-card" data-channel-id="91" data-channel-name="Star Gold Romance" data-channel-image="https://api3.viu.lk/api/client/v1/global/images/25750?accessKey=WkVjNWNscFhORDBLCg==">
+              <div class="icon-box"><img src="./SLTV – Live Channel Player_files/25750" loading="lazy" alt="Star Gold Romance"></div>
+              <span>Star Gold Romance</span>
+            </div>
+            <div class="channel-card" data-channel-id="89" data-channel-name="Star Plus" data-channel-image="https://api3.viu.lk/api/client/v1/global/images/25748?accessKey=WkVjNWNscFhORDBLCg==">
+              <div class="icon-box"><img src="./SLTV – Live Channel Player_files/25748" loading="lazy" alt="Star Plus"></div>
+              <span>Star Plus</span>
+            </div>
+            <div class="channel-card" data-channel-id="96" data-channel-name="Star Vijay" data-channel-image="https://api3.viu.lk/api/client/v1/global/images/25755?accessKey=WkVjNWNscFhORDBLCg==">
+              <div class="icon-box"><img src="./SLTV – Live Channel Player_files/25755" loading="lazy" alt="Star Vijay"></div>
+              <span>Star Vijay</span>
+            </div>
+            <div class="channel-card" data-channel-id="94" data-channel-name="Sun TV" data-channel-image="https://api3.viu.lk/api/client/v1/global/images/25753?accessKey=WkVjNWNscFhORDBLCg==">
+              <div class="icon-box"><img src="./SLTV – Live Channel Player_files/25753" loading="lazy" alt="Sun TV"></div>
+              <span>Sun TV</span>
+            </div>
+            <div class="channel-card" data-channel-id="77" data-channel-name="Warner TV" data-channel-image="https://api3.viu.lk/api/client/v1/global/images/25736?accessKey=WkVjNWNscFhORDBLCg==">
+              <div class="icon-box"><img src="./SLTV – Live Channel Player_files/25736" loading="lazy" alt="Warner TV"></div>
+              <span>Warner TV</span>
+            </div>
+            <div class="channel-card" data-channel-id="76" data-channel-name="Zee Cafe" data-channel-image="https://api3.viu.lk/api/client/v1/global/images/25735?accessKey=WkVjNWNscFhORDBLCg==">
+              <div class="icon-box"><img src="./SLTV – Live Channel Player_files/25735" loading="lazy" alt="Zee Cafe"></div>
+              <span>Zee Cafe</span>
+            </div>
+            <div class="channel-card" data-channel-id="92" data-channel-name="Zee Cinema" data-channel-image="https://api3.viu.lk/api/client/v1/global/images/25751?accessKey=WkVjNWNscFhORDBLCg==">
+              <div class="icon-box"><img src="./SLTV – Live Channel Player_files/25751" loading="lazy" alt="Zee Cinema"></div>
+              <span>Zee Cinema</span>
+            </div>
+            <div class="channel-card" data-channel-id="98" data-channel-name="Zee Tamil" data-channel-image="https://api3.viu.lk/api/client/v1/global/images/25757?accessKey=WkVjNWNscFhORDBLCg==">
+              <div class="icon-box"><img src="./SLTV – Live Channel Player_files/25757" loading="lazy" alt="Zee Tamil"></div>
+              <span>Zee Tamil</span>
+            </div>
+            <div class="channel-card" data-channel-id="101" data-channel-name="Zee Thirai" data-channel-image="https://api3.viu.lk/api/client/v1/global/images/188921?accessKey=WkVjNWNscFhORDBLCg==">
+              <div class="icon-box"><img src="./SLTV – Live Channel Player_files/188921" loading="lazy" alt="Zee Thirai"></div>
+              <span>Zee Thirai</span>
+            </div>
+            <div class="channel-card" data-channel-id="44" data-channel-name="Zing TV" data-channel-image="https://api3.viu.lk/api/client/v1/global/images/25704?accessKey=WkVjNWNscFhORDBLCg==">
+              <div class="icon-box"><img src="./SLTV – Live Channel Player_files/25704" loading="lazy" alt="Zing TV"></div>
+              <span>Zing TV</span>
+            </div></div></section><section class="cat-section"><div class="cat-title">Kids</div><div class="app-grid">
+            <div class="channel-card" data-channel-id="48" data-channel-name="A Plus Kids TV" data-channel-image="https://api3.viu.lk/api/client/v1/global/images/25709?accessKey=WkVjNWNscFhORDBLCg==">
+              <div class="icon-box"><img src="./SLTV – Live Channel Player_files/25709" loading="lazy" alt="A Plus Kids TV"></div>
+              <span>A Plus Kids TV</span>
+            </div>
+            <div class="channel-card" data-channel-id="50" data-channel-name="Baby TV" data-channel-image="https://api3.viu.lk/api/client/v1/global/images/25711?accessKey=WkVjNWNscFhORDBLCg==">
+              <div class="icon-box"><img src="./SLTV – Live Channel Player_files/25711" loading="lazy" alt="Baby TV"></div>
+              <span>Baby TV</span>
+            </div>
+            <div class="channel-card" data-channel-id="47" data-channel-name="Cartoon Network" data-channel-image="https://api3.viu.lk/api/client/v1/global/images/25707?accessKey=WkVjNWNscFhORDBLCg==">
+              <div class="icon-box"><img src="./SLTV – Live Channel Player_files/25707" loading="lazy" alt="Cartoon Network"></div>
+              <span>Cartoon Network</span>
+            </div>
+            <div class="channel-card" data-channel-id="46" data-channel-name="CBeebies" data-channel-image="https://api3.viu.lk/api/client/v1/global/images/25706?accessKey=WkVjNWNscFhORDBLCg==">
+              <div class="icon-box"><img src="./SLTV – Live Channel Player_files/25706" loading="lazy" alt="CBeebies"></div>
+              <span>CBeebies</span>
+            </div>
+            <div class="channel-card" data-channel-id="45" data-channel-name="Da Vinci" data-channel-image="https://api3.viu.lk/api/client/v1/global/images/25705?accessKey=WkVjNWNscFhORDBLCg==">
+              <div class="icon-box"><img src="./SLTV – Live Channel Player_files/25705" loading="lazy" alt="Da Vinci"></div>
+              <span>Da Vinci</span>
+            </div>
+            <div class="channel-card" data-channel-id="51" data-channel-name="Disney Jr" data-channel-image="https://api3.viu.lk/api/client/v1/global/images/25712?accessKey=WkVjNWNscFhORDBLCg==">
+              <div class="icon-box"><img src="./SLTV – Live Channel Player_files/25712" loading="lazy" alt="Disney Jr"></div>
+              <span>Disney Jr</span>
+            </div>
+            <div class="channel-card" data-channel-id="53" data-channel-name="Moonbug" data-channel-image="https://api3.viu.lk/api/client/v1/global/images/101113?accessKey=WkVjNWNscFhORDBLCg==">
+              <div class="icon-box"><img src="./SLTV – Live Channel Player_files/101113" loading="lazy" alt="Moonbug"></div>
+              <span>Moonbug</span>
+            </div>
+            <div class="channel-card" data-channel-id="52" data-channel-name="Nick Jr" data-channel-image="https://api3.viu.lk/api/client/v1/global/images/25713?accessKey=WkVjNWNscFhORDBLCg==">
+              <div class="icon-box"><img src="./SLTV – Live Channel Player_files/25713" loading="lazy" alt="Nick Jr"></div>
+              <span>Nick Jr</span>
+            </div>
+            <div class="channel-card" data-channel-id="49" data-channel-name="Nickelodeon" data-channel-image="https://api3.viu.lk/api/client/v1/global/images/25710?accessKey=WkVjNWNscFhORDBLCg==">
+              <div class="icon-box"><img src="./SLTV – Live Channel Player_files/25710" loading="lazy" alt="Nickelodeon"></div>
+              <span>Nickelodeon</span>
+            </div>
+            <div class="channel-card" data-channel-id="54" data-channel-name="Pogo" data-channel-image="https://api3.viu.lk/api/client/v1/global/images/47360?accessKey=WkVjNWNscFhORDBLCg==">
+              <div class="icon-box"><img src="./SLTV – Live Channel Player_files/47360" loading="lazy" alt="Pogo"></div>
+              <span>Pogo</span>
+            </div></div></section><section class="cat-section"><div class="cat-title">Documentary</div><div class="app-grid">
+            <div class="channel-card" data-channel-id="55" data-channel-name="Animal Planet" data-channel-image="https://api3.viu.lk/api/client/v1/global/images/25716?accessKey=WkVjNWNscFhORDBLCg==">
+              <div class="icon-box"><img src="./SLTV – Live Channel Player_files/25716" loading="lazy" alt="Animal Planet"></div>
+              <span>Animal Planet</span>
+            </div>
+            <div class="channel-card" data-channel-id="56" data-channel-name="Discovery" data-channel-image="https://api3.viu.lk/api/client/v1/global/images/25717?accessKey=WkVjNWNscFhORDBLCg==">
+              <div class="icon-box"><img src="./SLTV – Live Channel Player_files/25717" loading="lazy" alt="Discovery"></div>
+              <span>Discovery</span>
+            </div>
+            <div class="channel-card" data-channel-id="57" data-channel-name="Discovery Science" data-channel-image="https://api3.viu.lk/api/client/v1/global/images/25718?accessKey=WkVjNWNscFhORDBLCg==">
+              <div class="icon-box"><img src="./SLTV – Live Channel Player_files/25718" loading="lazy" alt="Discovery Science"></div>
+              <span>Discovery Science</span>
+            </div>
+            <div class="channel-card" data-channel-id="128" data-channel-name="Discovery Turbo" data-channel-image="https://api3.viu.lk/api/client/v1/global/images/47362?accessKey=WkVjNWNscFhORDBLCg==">
+              <div class="icon-box"><img src="./SLTV – Live Channel Player_files/47362" loading="lazy" alt="Discovery Turbo"></div>
+              <span>Discovery Turbo</span>
+            </div>
+            <div class="channel-card" data-channel-id="61" data-channel-name="History TV 18" data-channel-image="https://api3.viu.lk/api/client/v1/global/images/25720?accessKey=WkVjNWNscFhORDBLCg==">
+              <div class="icon-box"><img src="./SLTV – Live Channel Player_files/25720" loading="lazy" alt="History TV 18"></div>
+              <span>History TV 18</span>
+            </div>
+            <div class="channel-card" data-channel-id="60" data-channel-name="Nat Geo Wild" data-channel-image="https://api3.viu.lk/api/client/v1/global/images/25715?accessKey=WkVjNWNscFhORDBLCg==">
+              <div class="icon-box"><img src="./SLTV – Live Channel Player_files/25715" loading="lazy" alt="Nat Geo Wild"></div>
+              <span>Nat Geo Wild</span>
+            </div>
+            <div class="channel-card" data-channel-id="59" data-channel-name="National Geographic" data-channel-image="https://api3.viu.lk/api/client/v1/global/images/25719?accessKey=WkVjNWNscFhORDBLCg==">
+              <div class="icon-box"><img src="./SLTV – Live Channel Player_files/25719" loading="lazy" alt="National Geographic"></div>
+              <span>National Geographic</span>
+            </div>
+            <div class="channel-card" data-channel-id="83" data-channel-name="Sony BBC Earth" data-channel-image="https://api3.viu.lk/api/client/v1/global/images/25742?accessKey=WkVjNWNscFhORDBLCg==">
+              <div class="icon-box"><img src="./SLTV – Live Channel Player_files/25742" loading="lazy" alt="Sony BBC Earth"></div>
+              <span>Sony BBC Earth</span>
+            </div>
+            <div class="channel-card" data-channel-id="58" data-channel-name="TLC" data-channel-image="https://api3.viu.lk/api/client/v1/global/images/25194?accessKey=WkVjNWNscFhORDBLCg==">
+              <div class="icon-box"><img src="./SLTV – Live Channel Player_files/25194" loading="lazy" alt="TLC"></div>
+              <span>TLC</span>
+            </div></div></section><section class="cat-section"><div class="cat-title">Religious</div><div class="app-grid">
+            <div class="channel-card" data-channel-id="24" data-channel-name="Damsathara TV" data-channel-image="https://api3.viu.lk/api/client/v1/global/images/25683?accessKey=WkVjNWNscFhORDBLCg==">
+              <div class="icon-box"><img src="./SLTV – Live Channel Player_files/25683" loading="lazy" alt="Damsathara TV"></div>
+              <span>Damsathara TV</span>
+            </div>
+            <div class="channel-card" data-channel-id="28" data-channel-name="GOD TV" data-channel-image="https://api3.viu.lk/api/client/v1/global/images/25687?accessKey=WkVjNWNscFhORDBLCg==">
+              <div class="icon-box"><img src="./SLTV – Live Channel Player_files/25687" loading="lazy" alt="GOD TV"></div>
+              <span>GOD TV</span>
+            </div>
+            <div class="channel-card" data-channel-id="23" data-channel-name="Pragna TV" data-channel-image="https://api3.viu.lk/api/client/v1/global/images/25682?accessKey=WkVjNWNscFhORDBLCg==">
+              <div class="icon-box"><img src="./SLTV – Live Channel Player_files/25682" loading="lazy" alt="Pragna TV"></div>
+              <span>Pragna TV</span>
+            </div>
+            <div class="channel-card" data-channel-id="27" data-channel-name="Shraddha TV" data-channel-image="https://api3.viu.lk/api/client/v1/global/images/25686?accessKey=WkVjNWNscFhORDBLCg==">
+              <div class="icon-box"><img src="./SLTV – Live Channel Player_files/25686" loading="lazy" alt="Shraddha TV"></div>
+              <span>Shraddha TV</span>
+            </div>
+            <div class="channel-card" data-channel-id="26" data-channel-name="The Buddhist TV" data-channel-image="https://api3.viu.lk/api/client/v1/global/images/25685?accessKey=WkVjNWNscFhORDBLCg==">
+              <div class="icon-box"><img src="./SLTV – Live Channel Player_files/25685" loading="lazy" alt="The Buddhist TV"></div>
+              <span>The Buddhist TV</span>
+            </div>
+            <div class="channel-card" data-channel-id="29" data-channel-name="Verbum TV" data-channel-image="https://api3.viu.lk/api/client/v1/global/images/25688?accessKey=WkVjNWNscFhORDBLCg==">
+              <div class="icon-box"><img src="./SLTV – Live Channel Player_files/25688" loading="lazy" alt="Verbum TV"></div>
+              <span>Verbum TV</span>
+            </div></div></section><section class="cat-section"><div class="cat-title">Music</div><div class="app-grid">
+            <div class="channel-card" data-channel-id="40" data-channel-name="B4U Music" data-channel-image="https://api3.viu.lk/api/client/v1/global/images/25700?accessKey=WkVjNWNscFhORDBLCg==">
+              <div class="icon-box"><img src="./SLTV – Live Channel Player_files/25700" loading="lazy" alt="B4U Music"></div>
+              <span>B4U Music</span>
+            </div>
+            <div class="channel-card" data-channel-id="19" data-channel-name="Citi Hitz" data-channel-image="https://api3.viu.lk/api/client/v1/global/images/25678?accessKey=WkVjNWNscFhORDBLCg==">
+              <div class="icon-box"><img src="./SLTV – Live Channel Player_files/25678" loading="lazy" alt="Citi Hitz"></div>
+              <span>Citi Hitz</span>
+            </div>
+            <div class="channel-card" data-channel-id="41" data-channel-name="MTV 90s" data-channel-image="https://api3.viu.lk/api/client/v1/global/images/161765?accessKey=WkVjNWNscFhORDBLCg==">
+              <div class="icon-box"><img src="./SLTV – Live Channel Player_files/161765" loading="lazy" alt="MTV 90s"></div>
+              <span>MTV 90s</span>
+            </div></div></section><section class="cat-section"><div class="cat-title">Education</div><div class="app-grid">
+            <div class="channel-card" data-channel-id="102" data-channel-name="Nenasa Sinhala Grade 1-5" data-channel-image="https://api3.viu.lk/api/client/v1/global/images/25760?accessKey=WkVjNWNscFhORDBLCg==">
+              <div class="icon-box"><img src="./SLTV – Live Channel Player_files/25760" loading="lazy" alt="Nenasa Sinhala Grade 1-5"></div>
+              <span>Nenasa Sinhala Grade 1-5</span>
+            </div>
+            <div class="channel-card" data-channel-id="103" data-channel-name="Nenasa Sinhala Grade 6-9" data-channel-image="https://api3.viu.lk/api/client/v1/global/images/25762?accessKey=WkVjNWNscFhORDBLCg==">
+              <div class="icon-box"><img src="./SLTV – Live Channel Player_files/25762" loading="lazy" alt="Nenasa Sinhala Grade 6-9"></div>
+              <span>Nenasa Sinhala Grade 6-9</span>
+            </div>
+            <div class="channel-card" data-channel-id="105" data-channel-name="Nenasa Sinhala O/L" data-channel-image="https://api3.viu.lk/api/client/v1/global/images/25764?accessKey=WkVjNWNscFhORDBLCg==">
+              <div class="icon-box"><img src="./SLTV – Live Channel Player_files/25764" loading="lazy" alt="Nenasa Sinhala O/L"></div>
+              <span>Nenasa Sinhala O/L</span>
+            </div>
+            <div class="channel-card" data-channel-id="104" data-channel-name="Nenasa Tamil Grade 6-9" data-channel-image="https://api3.viu.lk/api/client/v1/global/images/25763?accessKey=WkVjNWNscFhORDBLCg==">
+              <div class="icon-box"><img src="./SLTV – Live Channel Player_files/25763" loading="lazy" alt="Nenasa Tamil Grade 6-9"></div>
+              <span>Nenasa Tamil Grade 6-9</span>
+            </div>
+            <div class="channel-card" data-channel-id="106" data-channel-name="Nenasa Tamil O/L" data-channel-image="https://api3.viu.lk/api/client/v1/global/images/25765?accessKey=WkVjNWNscFhORDBLCg==">
+              <div class="icon-box"><img src="./SLTV – Live Channel Player_files/25765" loading="lazy" alt="Nenasa Tamil O/L"></div>
+              <span>Nenasa Tamil O/L</span>
+            </div></div></section><section class="cat-section"><div class="cat-title">International</div><div class="app-grid">
+            <div class="channel-card" data-channel-id="31" data-channel-name="ABC Australia" data-channel-image="https://api3.viu.lk/api/client/v1/global/images/25690?accessKey=WkVjNWNscFhORDBLCg==">
+              <div class="icon-box"><img src="./SLTV – Live Channel Player_files/25690" loading="lazy" alt="ABC Australia"></div>
+              <span>ABC Australia</span>
+            </div>
+            <div class="channel-card" data-channel-id="130" data-channel-name="DW" data-channel-image="https://api3.viu.lk/api/client/v1/global/images/25789?accessKey=WkVjNWNscFhORDBLCg==">
+              <div class="icon-box"><img src="./SLTV – Live Channel Player_files/25789" loading="lazy" alt="DW"></div>
+              <span>DW</span>
+            </div>
+            <div class="channel-card" data-channel-id="134" data-channel-name="KBS Korea" data-channel-image="https://api3.viu.lk/api/client/v1/global/images/25793?accessKey=WkVjNWNscFhORDBLCg==">
+              <div class="icon-box"><img src="./SLTV – Live Channel Player_files/25793" loading="lazy" alt="KBS Korea"></div>
+              <span>KBS Korea</span>
+            </div>
+            <div class="channel-card" data-channel-id="132" data-channel-name="Phoenix Info News" data-channel-image="https://api3.viu.lk/api/client/v1/global/images/25791?accessKey=WkVjNWNscFhORDBLCg==">
+              <div class="icon-box"><img src="./SLTV – Live Channel Player_files/25791" loading="lazy" alt="Phoenix Info News"></div>
+              <span>Phoenix Info News</span>
+            </div>
+            <div class="channel-card" data-channel-id="131" data-channel-name="RAI Italia" data-channel-image="https://api3.viu.lk/api/client/v1/global/images/25790?accessKey=WkVjNWNscFhORDBLCg==">
+              <div class="icon-box"><img src="./SLTV – Live Channel Player_files/25790" loading="lazy" alt="RAI Italia"></div>
+              <span>RAI Italia</span>
+            </div>
+            <div class="channel-card" data-channel-id="129" data-channel-name="TRT World" data-channel-image="https://api3.viu.lk/api/client/v1/global/images/25787?accessKey=WkVjNWNscFhORDBLCg==">
+              <div class="icon-box"><img src="./SLTV – Live Channel Player_files/25787" loading="lazy" alt="TRT World"></div>
+              <span>TRT World</span>
+            </div>
+            <div class="channel-card" data-channel-id="133" data-channel-name="TV5 Monde Asie" data-channel-image="https://api3.viu.lk/api/client/v1/global/images/25792?accessKey=WkVjNWNscFhORDBLCg==">
+              <div class="icon-box"><img src="./SLTV – Live Channel Player_files/25792" loading="lazy" alt="TV5 Monde Asie"></div>
+              <span>TV5 Monde Asie</span>
+            </div></div></section><section class="cat-section"><div class="cat-title">HD Channels</div><div class="app-grid">
+            <div class="channel-card" data-channel-id="110" data-channel-name="Animal Planet HD" data-channel-image="https://api3.viu.lk/api/client/v1/global/images/25769?accessKey=WkVjNWNscFhORDBLCg==">
+              <div class="icon-box"><img src="./SLTV – Live Channel Player_files/25769" loading="lazy" alt="Animal Planet HD"></div>
+              <span>Animal Planet HD</span>
+            </div>
+            <div class="channel-card" data-channel-id="111" data-channel-name="AXN HD" data-channel-image="https://api3.viu.lk/api/client/v1/global/images/25770?accessKey=WkVjNWNscFhORDBLCg==">
+              <div class="icon-box"><img src="./SLTV – Live Channel Player_files/25770" loading="lazy" alt="AXN HD"></div>
+              <span>AXN HD</span>
+            </div>
+            <div class="channel-card" data-channel-id="116" data-channel-name="CinemaWorld HD" data-channel-image="https://api3.viu.lk/api/client/v1/global/images/25774?accessKey=WkVjNWNscFhORDBLCg==">
+              <div class="icon-box"><img src="./SLTV – Live Channel Player_files/25774" loading="lazy" alt="CinemaWorld HD"></div>
+              <span>CinemaWorld HD</span>
+            </div>
+            <div class="channel-card" data-channel-id="117" data-channel-name="Cinemax HD" data-channel-image="https://api3.viu.lk/api/client/v1/global/images/25775?accessKey=WkVjNWNscFhORDBLCg==">
+              <div class="icon-box"><img src="./SLTV – Live Channel Player_files/25775" loading="lazy" alt="Cinemax HD"></div>
+              <span>Cinemax HD</span>
+            </div>
+            <div class="channel-card" data-channel-id="109" data-channel-name="Discovery HD" data-channel-image="https://api3.viu.lk/api/client/v1/global/images/25768?accessKey=WkVjNWNscFhORDBLCg==">
+              <div class="icon-box"><img src="./SLTV – Live Channel Player_files/25768" loading="lazy" alt="Discovery HD"></div>
+              <span>Discovery HD</span>
+            </div>
+            <div class="channel-card" data-channel-id="114" data-channel-name="HBO HD" data-channel-image="https://api3.viu.lk/api/client/v1/global/images/25772?accessKey=WkVjNWNscFhORDBLCg==">
+              <div class="icon-box"><img src="./SLTV – Live Channel Player_files/25772" loading="lazy" alt="HBO HD"></div>
+              <span>HBO HD</span>
+            </div>
+            <div class="channel-card" data-channel-id="118" data-channel-name="HBO Hits HD" data-channel-image="https://api3.viu.lk/api/client/v1/global/images/25776?accessKey=WkVjNWNscFhORDBLCg==">
+              <div class="icon-box"><img src="./SLTV – Live Channel Player_files/25776" loading="lazy" alt="HBO Hits HD"></div>
+              <span>HBO Hits HD</span>
+            </div>
+            <div class="channel-card" data-channel-id="113" data-channel-name="HITS NOW HD" data-channel-image="https://api3.viu.lk/api/client/v1/global/images/25771?accessKey=WkVjNWNscFhORDBLCg==">
+              <div class="icon-box"><img src="./SLTV – Live Channel Player_files/25771" loading="lazy" alt="HITS NOW HD"></div>
+              <span>HITS NOW HD</span>
+            </div>
+            <div class="channel-card" data-channel-id="112" data-channel-name="ROCK Entertainment HD" data-channel-image="https://api3.viu.lk/api/client/v1/global/images/25794?accessKey=WkVjNWNscFhORDBLCg==">
+              <div class="icon-box"><img src="./SLTV – Live Channel Player_files/25794" loading="lazy" alt="ROCK Entertainment HD"></div>
+              <span>ROCK Entertainment HD</span>
+            </div>
+            <div class="channel-card" data-channel-id="115" data-channel-name="Star Movies HD" data-channel-image="https://api3.viu.lk/api/client/v1/global/images/25773?accessKey=WkVjNWNscFhORDBLCg==">
+              <div class="icon-box"><img src="./SLTV – Live Channel Player_files/25773" loading="lazy" alt="Star Movies HD"></div>
+              <span>Star Movies HD</span>
+            </div>
+            <div class="channel-card" data-channel-id="119" data-channel-name="Star Movies Select HD" data-channel-image="https://api3.viu.lk/api/client/v1/global/images/25777?accessKey=WkVjNWNscFhORDBLCg==">
+              <div class="icon-box"><img src="./SLTV – Live Channel Player_files/25777" loading="lazy" alt="Star Movies Select HD"></div>
+              <span>Star Movies Select HD</span>
+            </div></div></section></div>
+    </div>
+    <script src="./SLTV – Live Channel Player_files/script.js.download"></script>
+
+
+
+</body></html>
